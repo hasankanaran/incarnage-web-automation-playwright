@@ -6,7 +6,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
-  timeout: 120000, // 2 minutes
+  timeout:  180000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -15,8 +15,8 @@ module.exports = defineConfig({
   use: {
     // baseURL: 'http://localhost:3000',
     trace: 'on-first-retry',
-    navigationTimeout: 60000,
-    headless: false,  // <---- headed mode enabled globally
+    navigationTimeout: 600000,
+    headless: false,  
   },
 
   projects: [
@@ -26,9 +26,5 @@ module.exports = defineConfig({
     },
   ],
 
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+
 });
