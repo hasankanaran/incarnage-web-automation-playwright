@@ -46,5 +46,5 @@ This repository contains a fully automated end-to-end (E2E) testing script for [
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/incarnage-playwright-test.git
+git clone https://github.com/hasankanaran/incarnage-web-automation-playwright
 cd incarnage-playwright-test
